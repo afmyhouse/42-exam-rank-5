@@ -2,8 +2,8 @@
 
 ASpell::ASpell() {}
 
-ASpell::ASpell(const std::string &name, const std::string &e)
-	:_spellName(name), _spellEffects(e) {}
+ASpell::ASpell(const std::string &name, const std::string &effects)
+	:_spellName(name), _spellEffects(effects) {}
 
 ASpell::ASpell(ASpell const &ref) {
 	*this = ref;
