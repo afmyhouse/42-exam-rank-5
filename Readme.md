@@ -1,13 +1,13 @@
 ## Exam Rank 5 simple test
 (obviously, replace '_xx' with '_00', '_01' or '_02')
 
-main_*.cpp files are included in subfolder ``` attachments/ ```
+There are some ```main**.cpp``` files ready, and their outputs ```s.txt```, included in subfolder ``` attachments/ ```. Copy it to cpp_module_xx folder and on the the root folder ...
 
 
 ### compile it...
 
 ```bash
-c++ -Wextra -Werror -Wall ./cpp_module_xx/*.cpp -o wl
+c++ -Wextra -Werror -Wall ./cpp_module_xx/* -o wl
 ```
 
 ### run it...
