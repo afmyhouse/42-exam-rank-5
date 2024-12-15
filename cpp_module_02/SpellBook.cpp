@@ -8,7 +8,16 @@ SpellBook::SpellBook(SpellBook const &ref) {
 
 SpellBook &SpellBook::operator=(SpellBook const &ref) {
 	if (this != &ref) {
+		// Clean up existing targets
+		for (std::map<std::string, ASpell*>::iterator it = _spellBook.begin(); it != _spellBook.end(); ++it) {
+			delete it->second;
+		}
+		_spellBook.clear();
 
+		// Deep copy targets from ref
+		for (std::map<std::string, ASpell*>::const_iterator it = ref._spellBook.begin(); it != ref._spellBook.end(); ++it) {
+			_spellBook[it->first] = it->second->clone();
+		}
 	}
 	return *this;
 }

@@ -8,6 +8,16 @@ TargetGenerator::TargetGenerator(TargetGenerator const &ref) {
 
 TargetGenerator &TargetGenerator::operator=(TargetGenerator const &ref) {
 	if (this != &ref) {
+		// Clean up existing targets
+		for (std::map<std::string, ATarget*>::iterator it = _targetBook.begin(); it != _targetBook.end(); ++it) {
+			delete it->second;
+		}
+		_targetBook.clear();
+
+		// Deep copy targets from ref
+		for (std::map<std::string, ATarget*>::const_iterator it = ref._targetBook.begin(); it != ref._targetBook.end(); ++it) {
+			_targetBook[it->first] = it->second->clone();
+		}
 	}
 	return *this;
 }
