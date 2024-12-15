@@ -1,7 +1,7 @@
 ## Exam Rank 5 simple test
 (obviously, replace '_xx' with '_00', '_01' or '_02')
 
-main_*.cpp files are included in subfolder ```bash attachments ```
+main_*.cpp files are included in subfolder ``` attachments/ ```
 
 
 ### compile it...
