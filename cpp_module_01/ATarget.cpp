@@ -2,8 +2,8 @@
 
 ATarget::ATarget() {}
 
-ATarget::ATarget(const std::string &targetType)
-	: _targetType(targetType) {}
+ATarget::ATarget(const std::string &type)
+	: _targetType(type) {}
 
 ATarget::ATarget(ATarget const &ref) {
 	*this = ref;
@@ -11,7 +11,7 @@ ATarget::ATarget(ATarget const &ref) {
 
 ATarget & ATarget::operator=(ATarget const &ref) {
 	if (this != &ref) {
-
+		_targetType = ref.getType();
 	}
 	return *this;
 }
