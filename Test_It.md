@@ -12,7 +12,7 @@ c++ -Wextra -Werror -Wall ./cpp_module_xx/*.cpp -o wl
 ./wl | cat -e > ./cpp_module_xx/o.txt
 ```
 
-###check it...
+### check it...
 ``` bash
 diff ./cpp_module_xx/s.txt ./cpp_module_xx/o.txt
 ```
