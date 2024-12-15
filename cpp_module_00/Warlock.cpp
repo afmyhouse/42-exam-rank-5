@@ -17,8 +17,8 @@ const std::string & Warlock::getTitle() const {
 	return _warlockTitle;
 }
 
-void Warlock::setTitle(const std::string &nt) {
-	_warlockTitle = nt;
+void Warlock::setTitle(const std::string &newTitle) {
+	_warlockTitle = newTitle;
 }
 
 void Warlock::introduce() const {
