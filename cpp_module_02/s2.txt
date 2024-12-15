@@ -1,0 +1,11 @@
+Merlin: This looks like another boring day.$
+Merlin: I am Merlin, Master of Magic!$
+Target Practice Dummy has been fwooshed!$
+Inconspicuous Red-brick Wall has been burnt to a crisp!$
+Target Practice Dummy has been turned into a critter!$
+Merlin: My job here is done!$
+Cloned spell: Fireball created successfully.$
+Nonexistent spell could not be created.$
+Cloned target: Inconspicuous Red-brick Wall created successfully.$
+Nonexistent target could not be created.$
+All tests completed successfully.$
