@@ -22,6 +22,11 @@ Create the following two spells, on the same model as Fwoosh:
 In addition to this, just so he won't have only dummy to attack, let's make a
 new target for him, which will be the BrickWall (Type: "Inconspicuous Red-brick Wall").
 
+
+
+
+SpellBook
+
 Now, make a SpellBook class, in canonical form, that can't be copied or instantiated
 by copy. It will have the following functions:
 
@@ -31,12 +36,22 @@ by copy. It will have the following functions:
 * ASpell* createSpell(string const &), that receives a string corresponding to
   the name of a spell, creates it, and returns it.
 
+
+
+
+Warlock
+
 Modify the Warlock, now, make it have a spell book that will be created with
 him and destroyed with him. Also make his learnSpell and forgetSpell functions
 call those of the spell book.
 
 The launchSpell function will have to use the SpellBook to create the spell
 it's attempting to launch.
+
+
+
+
+TargetGenerator
 
 Make a TargetGenerator class, in canonical form, and as before,
 non-copyable.
